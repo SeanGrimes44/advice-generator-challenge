@@ -47,6 +47,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+1. Use API to get info
+2. Display info to the page.
+3. Create html elements to display
+4. use CSS to style the page.
+
 ### Built with
 
 - Semantic HTML5 markup

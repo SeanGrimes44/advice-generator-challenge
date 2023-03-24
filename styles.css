@@ -1,0 +1,25 @@
+* {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background {
+    background-color: aqua;
+    height: 330px;
+    width: 540px;
+    margin: auto;
+}
+
+.dice {
+    
+}
