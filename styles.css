@@ -1,7 +1,9 @@
 * {
-    font-family: "Manrope", sans-serif;
-    font-weight: 800;
+    
 }
+
+.attribution { font-size: 11px; text-align: center; color: hsl(193, 38%, 86%)}
+.attribution a { color: hsl(228, 45%, 44%); }
 
 body {
     margin: 0;
@@ -11,15 +13,33 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: hsl(218, 23%, 16%);
 }
 
 .background {
-    background-color: aqua;
+    background-color: hsl(217, 19%, 24%);
     height: 330px;
     width: 540px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+
+h1.advice-id {
+    color: hsl(150, 100%, 66%);
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+p.advice-text {
+    color:hsl(193, 38%, 86%);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
 }
 
 .dice {
-    
+
 }
