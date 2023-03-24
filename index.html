@@ -16,21 +16,27 @@
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <div class="advice-id">Advice #</div>
+  <div class="advice-text">""</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sean Grimes</a>.
   </div>
   <script>
+
+    function updatePage (id, advice) {
+      const idSection = document.querySelector(".advice-id");
+      const adviceSection = document.querySelector(".advice-text");
+      idSection.textContent = "Advice #" + id;
+      adviceSection.textContent = '"' + advice + '"';
+    }
+
     getAdvice();
     async function getAdvice() {
       const response = await fetch("https://api.adviceslip.com/advice");
       const data = await response.json();
-      console.log(data.slip.advice);
-      console.log(data.slip.id);
+      updatePage(data.slip.id, data.slip.advice);
     }
   </script>
 </body>
