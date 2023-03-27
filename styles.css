@@ -30,7 +30,11 @@ body {
 h1.advice-id {
     color: hsl(150, 100%, 66%);
     font-family: sans-serif;
-    font-style: oblique;
+    font-style: normal;
+    padding: 0px;
+    margin: 50px;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
 p.advice-text {
@@ -38,6 +42,8 @@ p.advice-text {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-size: 28px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .dice {
