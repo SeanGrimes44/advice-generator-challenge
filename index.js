@@ -1,6 +1,13 @@
 getAdvice();
 const dice = document.querySelector(".dice");
-dice.addEventListener("click",() => {getAdvice(); console.log("pressed");});
+dice.addEventListener("click", getAdvice);
+dice.addEventListener("mouseover", () => {
+    dice.classList.add("hovered");
+});
+dice.addEventListener("mouseleave", () => {
+    dice.classList.remove("hovered");
+});
+
 
 function updatePage (id, advice) {
     const idSection = document.querySelector(".advice-id");

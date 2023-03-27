@@ -1,7 +1,3 @@
-* {
-    
-}
-
 .attribution { font-size: 11px; text-align: center; color: hsl(193, 38%, 86%)}
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -60,4 +56,8 @@ p.advice-text {
     align-items: center;
     position: relative;
     bottom: 25px;
+}
+
+.hovered {
+    box-shadow: 0px 0px 16px hsl(150, 100%, 66%);
 }
