@@ -1,3 +1,7 @@
+getAdvice();
+const dice = document.querySelector(".dice");
+dice.addEventListener("click",() => {getAdvice(); console.log("pressed");});
+
 function updatePage (id, advice) {
     const idSection = document.querySelector(".advice-id");
     const adviceSection = document.querySelector(".advice-text");
@@ -5,9 +9,8 @@ function updatePage (id, advice) {
     adviceSection.textContent = '"' + advice + '"';
   }
 
-  getAdvice();
-  async function getAdvice() {
+async function getAdvice() {
     const response = await fetch("https://api.adviceslip.com/advice");
     const data = await response.json();
     updatePage(data.slip.id, data.slip.advice);
-  }
+}
