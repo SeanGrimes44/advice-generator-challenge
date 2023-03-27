@@ -50,5 +50,14 @@ p.advice-text {
 }
 
 .dice {
-
+    background-color: hsl(150, 100%, 66%);
+    border-style: none;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 25px;
 }
