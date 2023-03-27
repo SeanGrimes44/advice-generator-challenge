@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-
+    border-radius: 10px;
 }
 
 h1.advice-id {
@@ -43,7 +43,10 @@ p.advice-text {
     font-weight: 800;
     font-size: 28px;
     padding: 0px;
-    margin: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .dice {
